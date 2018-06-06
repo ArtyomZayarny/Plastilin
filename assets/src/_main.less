@@ -1,0 +1,151 @@
+.main {
+  padding-top:94px;
+  .tabs {
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    min-height: 63px;
+    margin-bottom: 17px;
+
+
+
+    &-smart {
+      .flex-center;
+      width: 50%;
+      border-right: 1px solid rgba(118, 118, 118, 0.2);
+
+    }
+    &-use {
+      .flex-center;
+      width: 50%;
+    }
+
+    &-link {
+      display: block;
+      .link-text(34px, 300, 42px);
+    }
+
+  }
+  .slider{
+    &-item{
+      .pic{
+        display: flex;
+        justify-content: center;
+        min-height: 186px;
+      }
+      .text{
+        display: flex;
+        padding: 45px 0;
+
+        .slider-text(18px,300,23px);
+        &-left{
+          width:50%;
+        }
+        &-right{
+          width:50%;
+        }
+      }
+    }
+    .btn{
+      .next{
+        width: 40px;
+        border-radius: 50%;
+        height: 40px;
+        background-color: transparent;
+        transittion:all 0.3s;
+        &:hover{
+        background-color: @yellow;
+        }
+      }
+    }
+  }
+}
+@media (max-width:768px){
+
+  .slider-btn{
+    display: block;
+  }
+  .main{
+    padding: 35px 15px 0 15px;
+  }
+  .mob-content{
+    display:block;
+  }
+  .main .slider-item .text{
+    padding: 0;
+  }
+  .img-desktop{
+    display:none;
+  }
+  .img-mob{
+    display: block;
+
+  }
+  .tabs-wrap{
+    display:none;
+  }
+  div#next{
+    display:none;
+  }
+  .main .slider-item .pic{
+    background-color: @gray3;
+  }
+  .main .slider-item .pic{
+    justify-content: center;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+  }
+  .main .slider-item .pic{
+    min-height: 211px;
+  }
+  .text-left,
+  .text-right{
+    display:none;
+  }
+  .text{
+
+    .mob-content {
+
+      width:100%;
+
+      &__top {
+        padding: 39px 0;
+        display:flex;
+        justify-content: space-between;
+        .title-wrap {
+          position:relative;
+          &:first-child{
+            border-right: 1px solid #e6e6e6;
+          }
+
+          width:50%;
+          .title {
+            text-align: center;
+            .slide-title(15px, 700, 24px);
+
+          }
+          .title-blue{
+            .blue-text;
+          }
+        }
+      }
+      &__bottom{
+
+        .slide-desc{
+          padding-bottom: 50px;
+
+        }
+      }
+
+      }
+
+  }
+  .slider-btn{
+    margin:10px 0;
+    .dots-box{
+      display:flex;
+      justify-content: center;
+    }
+  }
+}
